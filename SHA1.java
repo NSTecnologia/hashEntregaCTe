@@ -30,8 +30,6 @@ public class SHA1 {
             // Converte o Array de Bytes para uma base64
             hashEntrega = Base64.getEncoder().encodeToString(b);
 
-            System.out.println(sha1);
-            System.out.println(Arrays.toString(b));
 
         }
 
@@ -44,20 +42,19 @@ public class SHA1 {
     }
 
     // Exemplo de uso da função
-
     public static void main(String[] argv) {
 	    
-	// Chave do CT-e
+	    // Chave do CT-e
         String chCTe = ""; 
 	
-	// Base64 da imagem capturada da entrega (Exemplo: imagem capturada da assinatura eletrônica, digital do recebedor, foto, etc).    
+	    // Base64 da imagem capturada da entrega (Exemplo: imagem capturada da assinatura eletrônica, digital do recebedor, foto, etc).    
         String base64ImagemEntrega = ""; 
 
         // Chamada da função.
         String hashGerada = gerarHashEntrega(chCTe, base64ImagemEntrega);
 
         // Para visualizar a hash para ser informada no campo do evento do CTe
-        System.out.println("hash gerada: " + hashGerada);
+        System.out.println("hashEntrega : " + hashGerada);
 
     }
 
