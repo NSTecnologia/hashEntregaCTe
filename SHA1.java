@@ -48,7 +48,7 @@ public class SHA1 {
         String chCTe = "";
 
 	    // Base64 da imagem capturada da entrega (Exemplo: imagem capturada da assinatura eletrônica, digital do recebedor, foto, etc).    
-        String base64ImagemEntrega = ""
+        String base64ImagemEntrega = "";
 
         // Chamada da função.
         String hashGerada = gerarHashEntrega(chCTe, base64ImagemEntrega);
